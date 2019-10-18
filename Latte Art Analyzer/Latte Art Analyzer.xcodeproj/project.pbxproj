@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A157EFA422364B3500F381F5 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A157EFA322364B3500F381F5 /* ProgressBar.swift */; };
+		A15A10C8220564FF009B799E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A10C7220564FF009B799E /* AppDelegate.swift */; };
+		A15A10CD220564FF009B799E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15A10CB220564FF009B799E /* Main.storyboard */; };
+		A15A10CF22056501009B799E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15A10CE22056501009B799E /* Assets.xcassets */; };
+		A15A10D222056501009B799E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15A10D022056501009B799E /* LaunchScreen.storyboard */; };
+		A15A10DD22056501009B799E /* Latte_Art_AnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A10DC22056501009B799E /* Latte_Art_AnalyzerTests.swift */; };
+		A15A10E822056501009B799E /* Latte_Art_AnalyzerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A10E722056501009B799E /* Latte_Art_AnalyzerUITests.swift */; };
+		A15A10F8220575D7009B799E /* AnalyzerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A10F7220575D7009B799E /* AnalyzerModel.swift */; };
+		A15A10FC220578EB009B799E /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A10FB220578EB009B799E /* TakePhotoViewController.swift */; };
+		A15A10FE22057E8B009B799E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A10FD22057E8B009B799E /* HomeScreenViewController.swift */; };
+		A15A11002206429C009B799E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15A10FF2206429B009B799E /* opencv2.framework */; };
+		A16C9BC622275F8600A72865 /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C9BC522275F8500A72865 /* AnalysisViewController.swift */; };
+		A1E225C1221514E5008D3497 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A1E225C0221514E5008D3497 /* OpenCVWrapper.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A15A10D922056501009B799E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15A10BC220564FF009B799E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15A10C3220564FF009B799E;
+			remoteInfo = "Latte Art Analyzer";
+		};
+		A15A10E422056501009B799E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15A10BC220564FF009B799E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15A10C3220564FF009B799E;
+			remoteInfo = "Latte Art Analyzer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A157EFA322364B3500F381F5 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		A15A10C4220564FF009B799E /* Latte Art Analyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Latte Art Analyzer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15A10C7220564FF009B799E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A15A10CC220564FF009B799E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A15A10CE22056501009B799E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A15A10D122056501009B799E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A15A10D322056501009B799E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15A10D822056501009B799E /* Latte Art AnalyzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Latte Art AnalyzerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15A10DC22056501009B799E /* Latte_Art_AnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latte_Art_AnalyzerTests.swift; sourceTree = "<group>"; };
+		A15A10DE22056501009B799E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15A10E322056501009B799E /* Latte Art AnalyzerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Latte Art AnalyzerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15A10E722056501009B799E /* Latte_Art_AnalyzerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latte_Art_AnalyzerUITests.swift; sourceTree = "<group>"; };
+		A15A10E922056501009B799E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15A10F7220575D7009B799E /* AnalyzerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzerModel.swift; sourceTree = "<group>"; };
+		A15A10FB220578EB009B799E /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
+		A15A10FD22057E8B009B799E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		A15A10FF2206429B009B799E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../Library/opencv2.framework; sourceTree = "<group>"; };
+		A16C9BC522275F8500A72865 /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+		A1E225BE221514E5008D3497 /* Latte Art Analyzer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Latte Art Analyzer-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1E225BF221514E5008D3497 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		A1E225C0221514E5008D3497 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A15A10C1220564FF009B799E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15A11002206429C009B799E /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15A10D522056501009B799E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15A10E022056501009B799E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A15A10BB220564FF009B799E = {
+			isa = PBXGroup;
+			children = (
+				A15A10FF2206429B009B799E /* opencv2.framework */,
+				A15A10C6220564FF009B799E /* Latte Art Analyzer */,
+				A15A10DB22056501009B799E /* Latte Art AnalyzerTests */,
+				A15A10E622056501009B799E /* Latte Art AnalyzerUITests */,
+				A15A10C5220564FF009B799E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A15A10C5220564FF009B799E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A15A10C4220564FF009B799E /* Latte Art Analyzer.app */,
+				A15A10D822056501009B799E /* Latte Art AnalyzerTests.xctest */,
+				A15A10E322056501009B799E /* Latte Art AnalyzerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A15A10C6220564FF009B799E /* Latte Art Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				A15A10CB220564FF009B799E /* Main.storyboard */,
+				A15A10F7220575D7009B799E /* AnalyzerModel.swift */,
+				A1E225BF221514E5008D3497 /* OpenCVWrapper.h */,
+				A1E225C0221514E5008D3497 /* OpenCVWrapper.mm */,
+				A15A10FB220578EB009B799E /* TakePhotoViewController.swift */,
+				A16C9BC522275F8500A72865 /* AnalysisViewController.swift */,
+				A15A10FD22057E8B009B799E /* HomeScreenViewController.swift */,
+				A15A10C7220564FF009B799E /* AppDelegate.swift */,
+				A15A10CE22056501009B799E /* Assets.xcassets */,
+				A15A10D022056501009B799E /* LaunchScreen.storyboard */,
+				A15A10D322056501009B799E /* Info.plist */,
+				A1E225BE221514E5008D3497 /* Latte Art Analyzer-Bridging-Header.h */,
+				A157EFA322364B3500F381F5 /* ProgressBar.swift */,
+			);
+			path = "Latte Art Analyzer";
+			sourceTree = "<group>";
+		};
+		A15A10DB22056501009B799E /* Latte Art AnalyzerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A15A10DC22056501009B799E /* Latte_Art_AnalyzerTests.swift */,
+				A15A10DE22056501009B799E /* Info.plist */,
+			);
+			path = "Latte Art AnalyzerTests";
+			sourceTree = "<group>";
+		};
+		A15A10E622056501009B799E /* Latte Art AnalyzerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A15A10E722056501009B799E /* Latte_Art_AnalyzerUITests.swift */,
+				A15A10E922056501009B799E /* Info.plist */,
+			);
+			path = "Latte Art AnalyzerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A15A10C3220564FF009B799E /* Latte Art Analyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15A10EC22056501009B799E /* Build configuration list for PBXNativeTarget "Latte Art Analyzer" */;
+			buildPhases = (
+				A15A10C0220564FF009B799E /* Sources */,
+				A15A10C1220564FF009B799E /* Frameworks */,
+				A15A10C2220564FF009B799E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Latte Art Analyzer";
+			productName = "Latte Art Analyzer";
+			productReference = A15A10C4220564FF009B799E /* Latte Art Analyzer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A15A10D722056501009B799E /* Latte Art AnalyzerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15A10EF22056501009B799E /* Build configuration list for PBXNativeTarget "Latte Art AnalyzerTests" */;
+			buildPhases = (
+				A15A10D422056501009B799E /* Sources */,
+				A15A10D522056501009B799E /* Frameworks */,
+				A15A10D622056501009B799E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A15A10DA22056501009B799E /* PBXTargetDependency */,
+			);
+			name = "Latte Art AnalyzerTests";
+			productName = "Latte Art AnalyzerTests";
+			productReference = A15A10D822056501009B799E /* Latte Art AnalyzerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A15A10E222056501009B799E /* Latte Art AnalyzerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15A10F222056501009B799E /* Build configuration list for PBXNativeTarget "Latte Art AnalyzerUITests" */;
+			buildPhases = (
+				A15A10DF22056501009B799E /* Sources */,
+				A15A10E022056501009B799E /* Frameworks */,
+				A15A10E122056501009B799E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A15A10E522056501009B799E /* PBXTargetDependency */,
+			);
+			name = "Latte Art AnalyzerUITests";
+			productName = "Latte Art AnalyzerUITests";
+			productReference = A15A10E322056501009B799E /* Latte Art AnalyzerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A15A10BC220564FF009B799E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Cole Cofer";
+				TargetAttributes = {
+					A15A10C3220564FF009B799E = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					A15A10D722056501009B799E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A15A10C3220564FF009B799E;
+					};
+					A15A10E222056501009B799E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A15A10C3220564FF009B799E;
+					};
+				};
+			};
+			buildConfigurationList = A15A10BF220564FF009B799E /* Build configuration list for PBXProject "Latte Art Analyzer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A15A10BB220564FF009B799E;
+			productRefGroup = A15A10C5220564FF009B799E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A15A10C3220564FF009B799E /* Latte Art Analyzer */,
+				A15A10D722056501009B799E /* Latte Art AnalyzerTests */,
+				A15A10E222056501009B799E /* Latte Art AnalyzerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A15A10C2220564FF009B799E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15A10D222056501009B799E /* LaunchScreen.storyboard in Resources */,
+				A15A10CF22056501009B799E /* Assets.xcassets in Resources */,
+				A15A10CD220564FF009B799E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15A10D622056501009B799E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15A10E122056501009B799E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A15A10C0220564FF009B799E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15A10F8220575D7009B799E /* AnalyzerModel.swift in Sources */,
+				A1E225C1221514E5008D3497 /* OpenCVWrapper.mm in Sources */,
+				A16C9BC622275F8600A72865 /* AnalysisViewController.swift in Sources */,
+				A15A10FE22057E8B009B799E /* HomeScreenViewController.swift in Sources */,
+				A15A10FC220578EB009B799E /* TakePhotoViewController.swift in Sources */,
+				A15A10C8220564FF009B799E /* AppDelegate.swift in Sources */,
+				A157EFA422364B3500F381F5 /* ProgressBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15A10D422056501009B799E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15A10DD22056501009B799E /* Latte_Art_AnalyzerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15A10DF22056501009B799E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15A10E822056501009B799E /* Latte_Art_AnalyzerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A15A10DA22056501009B799E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15A10C3220564FF009B799E /* Latte Art Analyzer */;
+			targetProxy = A15A10D922056501009B799E /* PBXContainerItemProxy */;
+		};
+		A15A10E522056501009B799E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15A10C3220564FF009B799E /* Latte Art Analyzer */;
+			targetProxy = A15A10E422056501009B799E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A15A10CB220564FF009B799E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A15A10CC220564FF009B799E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A15A10D022056501009B799E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A15A10D122056501009B799E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A15A10EA22056501009B799E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A15A10EB22056501009B799E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A15A10ED22056501009B799E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NN7X35PK43;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/ICloud_Docs/PSU/CS410_CV/Project/Library",
+				);
+				INFOPLIST_FILE = "Latte Art Analyzer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inductionApps.Latte-Art-Analyzer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Latte Art Analyzer/Latte Art Analyzer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A15A10EE22056501009B799E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NN7X35PK43;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/ICloud_Docs/PSU/CS410_CV/Project/Library",
+				);
+				INFOPLIST_FILE = "Latte Art Analyzer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inductionApps.Latte-Art-Analyzer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Latte Art Analyzer/Latte Art Analyzer-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A15A10F022056501009B799E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NN7X35PK43;
+				INFOPLIST_FILE = "Latte Art AnalyzerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inductionApps.Latte-Art-AnalyzerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Latte Art Analyzer.app/Latte Art Analyzer";
+			};
+			name = Debug;
+		};
+		A15A10F122056501009B799E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NN7X35PK43;
+				INFOPLIST_FILE = "Latte Art AnalyzerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inductionApps.Latte-Art-AnalyzerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Latte Art Analyzer.app/Latte Art Analyzer";
+			};
+			name = Release;
+		};
+		A15A10F322056501009B799E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NN7X35PK43;
+				INFOPLIST_FILE = "Latte Art AnalyzerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inductionApps.Latte-Art-AnalyzerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Latte Art Analyzer";
+			};
+			name = Debug;
+		};
+		A15A10F422056501009B799E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NN7X35PK43;
+				INFOPLIST_FILE = "Latte Art AnalyzerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inductionApps.Latte-Art-AnalyzerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Latte Art Analyzer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A15A10BF220564FF009B799E /* Build configuration list for PBXProject "Latte Art Analyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15A10EA22056501009B799E /* Debug */,
+				A15A10EB22056501009B799E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15A10EC22056501009B799E /* Build configuration list for PBXNativeTarget "Latte Art Analyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15A10ED22056501009B799E /* Debug */,
+				A15A10EE22056501009B799E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15A10EF22056501009B799E /* Build configuration list for PBXNativeTarget "Latte Art AnalyzerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15A10F022056501009B799E /* Debug */,
+				A15A10F122056501009B799E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15A10F222056501009B799E /* Build configuration list for PBXNativeTarget "Latte Art AnalyzerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15A10F322056501009B799E /* Debug */,
+				A15A10F422056501009B799E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A15A10BC220564FF009B799E /* Project object */;
+}
