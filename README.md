@@ -29,7 +29,7 @@ To detect the cup I used Hough Circle Detection after first applying an Adaptive
 
 
 ### Results
-Example Results for a latte image:
+Example Results for a latte image:<br>
 ![Test latte art image.](https://raw.githubusercontent.com/ColeoCofer/Latte_Art_Analyzer/master/Images/test1.png)
 
 ![Results from App.](https://raw.githubusercontent.com/ColeoCofer/Latte_Art_Analyzer/master/Images/sampleResults.png)
