@@ -9,7 +9,7 @@ The app rates latte art on three main criteria: Symmetry, Framing, and Contrast.
 To detect the cup I used Hough Circle Detection after first applying an Adaptive Threshold to bring extra contrast to the outter cup ring.
 
 #### Symmetry
-* It uses Fast Feature Detection to detect the key points. This worked best for my after applying gaussion blur and adaptive thresholding.
+* It uses Fast Feature Detection to detect the key points. This worked best for my after applying gaussion blur and adaptive thresholding
 * Next, it checks if key point distances across the y-axis are within a neighborhood have similar luminance and similar color
 * With this information, it determines the symmetry by splitting the cup into quadrants and calculating the ratio of key points between quadrants <br>
 
